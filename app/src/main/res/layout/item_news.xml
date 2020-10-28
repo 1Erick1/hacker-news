@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.sulek.ssml.SimpleSwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:menuSide="Right"
+    app:dynamicMenuWidth="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menuContainer"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:background="#F44336">
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/primaryText"
+            tools:text="How to automaticallu create images for responsive design"/>
+
+        <TextView
+            android:id="@+id/tvSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/secondaryText"
+            tools:text="Danno - 24m"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/tvSub"
+            android:layout_marginTop="16dp"
+            android:background="#65212223"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</io.sulek.ssml.SimpleSwipeMenuLayout>

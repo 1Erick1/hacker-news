@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Hacker News</string>
+    <string name="delete">Delete</string>
+    <string name="msg_network_error">Please check your connection and try again</string>
+    <string name="msg_missing_url">This news doesn\'t have a link</string>
+</resources>
