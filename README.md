@@ -1,4 +1,4 @@
-Sample app that shows the latest post from Hacker News
+Sample app that shows the latest posts from Hacker News
 
 Requirements:
 
