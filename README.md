@@ -1,6 +1,6 @@
 Sample app that shows the latest posts from Hacker News
 
-Requirements:
+<b>Requirements:</b>
 
 -Android Studio 4.0+
 
