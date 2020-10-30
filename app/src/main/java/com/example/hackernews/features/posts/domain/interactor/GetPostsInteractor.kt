@@ -6,7 +6,7 @@ import io.reactivex.Single
 
 class GetPostsInteractor(private val postsRepository: PostsRepository) {
 
-    fun exec(): Single<List<PostEntity>>{
-        return postsRepository.getNewsList()
+    fun execute(): Single<List<PostEntity>>{
+        return postsRepository.getPosts()
     }
 }

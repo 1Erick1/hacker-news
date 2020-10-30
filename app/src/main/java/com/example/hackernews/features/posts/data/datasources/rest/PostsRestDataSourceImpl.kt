@@ -5,7 +5,7 @@ import io.reactivex.Single
 
 class PostsRestDataSourceImpl(private val api : PostsApi): PostsRestDataSource {
 
-    override fun getNewsList(): Single<List<PostResponse>> {
+    override fun getPosts(): Single<List<PostResponse>> {
         return api.getNewsList()
             .map { it.posts }
     }

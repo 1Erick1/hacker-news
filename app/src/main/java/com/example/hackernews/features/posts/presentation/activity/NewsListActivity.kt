@@ -29,7 +29,7 @@ class NewsListActivity: BaseActivity() {
         adapter = PostAdapter(
             {
                 adapter.removeItem(it)
-                //TODO Store removed news ids
+                viewModel.hidePost(it)
             },
             {
                 if (it.isNullOrEmpty().not()){

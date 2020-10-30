@@ -1,10 +1,13 @@
 package com.example.hackernews.features.posts.data.datasources.local
 
-import com.example.hackernews.features.posts.data.datasources.rest.response.PostResponse
+import com.example.hackernews.features.posts.data.datasources.local.dto.DeletedDto
+import com.example.hackernews.features.posts.data.datasources.local.dto.PostDto
 import io.reactivex.Completable
 import io.reactivex.Single
 
 interface PostsLocalDataSource {
-    fun getNewsList(): Single<List<PostResponse>>
-    fun saveNews(): Completable
+    fun getPosts(): Single<List<PostDto>>
+    fun savePosts(posts: List<PostDto>)
+    fun getDeleted(): Single<List<DeletedDto>>
+    fun addToHiddenPosts(x: DeletedDto): Completable
 }

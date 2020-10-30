@@ -8,4 +8,8 @@ class PostEntity(
     val author: String,
     val createdAt: Date,
     val url: String?
-)
+){
+    override fun equals(other: Any?): Boolean {
+        return other is PostEntity && other.id == this.id
+    }
+}

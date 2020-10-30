@@ -4,5 +4,5 @@ import com.example.hackernews.features.posts.data.datasources.rest.response.Post
 import io.reactivex.Single
 
 interface PostsRestDataSource {
-    fun getNewsList(): Single<List<PostResponse>>
+    fun getPosts(): Single<List<PostResponse>>
 }
